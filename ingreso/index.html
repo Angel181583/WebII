@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Usuario</title>
+</head>
+<body>
+    <h1>Agregar Usuario</h1>
+    <form action="insertar.php" method="POST">
+        <label for="tipo_usuario">Tipo de Usuario:</label>
+        <select name="tipo_usuario" required>
+            <option value="Ciudadano">Ciudadano</option>
+            <option value="Consultor">Consultor</option>
+            <option value="Administrador">Administrador</option>
+        </select>
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="contraseña" required>
+        <br>
+        <button type="submit">Agregar Usuario</button>
+    </form>
+</body>
+</html>
